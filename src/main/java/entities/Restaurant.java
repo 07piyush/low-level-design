@@ -9,6 +9,14 @@ public class Restaurant {
 	private Menu menu;
 	
 	
+	public Restaurant(long id, String name, Location location, int rating, Menu menu) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.location = location;
+		this.rating = rating;
+		this.menu = menu;
+	}
 	public long getId() {
 		return id;
 	}

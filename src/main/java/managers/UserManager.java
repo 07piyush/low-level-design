@@ -14,7 +14,7 @@ public class UserManager {
 		users = new LinkedHashMap<Long, User>();
 	}
 	
-	public UserManager getInstance() {
+	public static UserManager getInstance() {
 		if(null == manager) {
 			synchronized(UserManager.class) {
 				if(null == manager) {

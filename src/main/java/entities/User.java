@@ -4,9 +4,20 @@ public class User {
 
 	private long userId;
 	private String name;
-	private String Address;
+	private String address;
 	private Location location;
 	private int rating;
+	
+	
+	public User(long userId, String name, String address, Location location, int rating) {
+		super();
+		this.userId = userId;
+		this.name = name;
+		this.address = address;
+		this.location = location;
+		this.rating = rating;
+	}
+	
 	public long getUserId() {
 		return userId;
 	}
@@ -20,10 +31,10 @@ public class User {
 		this.name = name;
 	}
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
 	public Location getLocation() {
 		return location;
