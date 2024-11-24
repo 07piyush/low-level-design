@@ -16,7 +16,7 @@ public class RestaurantManager {
 
 	public RestaurantManager getRestaurantManager() {
 		if(null == manager) {
-			synchronized (manager) {
+			synchronized (RestaurantManager.class) {
 				if(null == manager) {
 					manager = new RestaurantManager();
 				}

@@ -16,7 +16,7 @@ public class UserManager {
 	
 	public UserManager getInstance() {
 		if(null == manager) {
-			synchronized(manager) {
+			synchronized(UserManager.class) {
 				if(null == manager) {
 					manager = new UserManager();
 				}
