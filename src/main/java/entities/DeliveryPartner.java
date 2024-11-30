@@ -6,6 +6,12 @@ public class DeliveryPartner {
 	private String name;
 	private int rating;
 	
+	public DeliveryPartner(long partnerId, String name, int rating) {
+		super();
+		this.partnerId = partnerId;
+		this.name = name;
+		this.rating = rating;
+	}
 	public long getPartnerId() {
 		return partnerId;
 	}

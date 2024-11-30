@@ -14,7 +14,7 @@ public class RestaurantManager {
 		restaurants = new LinkedHashMap<Long, Restaurant>();
 	}
 
-	public RestaurantManager getRestaurantManager() {
+	public static RestaurantManager getRestaurantManager() {
 		if(null == manager) {
 			synchronized (RestaurantManager.class) {
 				if(null == manager) {
