@@ -28,11 +28,13 @@ public class OrderManager {
 	public void placeOrder(OrderRequest request) {
 		//do multiple task for this order.
 		//1. notify restaurant manager.
+		manageOrder(request.getOrderId());
 		//2. notify deliveryPartnerManager
+		maangeDeliver(request.getOrderId());
 		//3. update customer.
 	}
 	
-	private void maangerDeliver(String orderId) {
+	private void maangeDeliver(String orderId) {
 		OrderRequest orderRequest = orders.get(orderId);
 		DeliveryPartnerManager deliveryManager = DeliveryPartnerManager.getInstance();
 		StrategyManager strategyManager = StrategyManager.getInstance();
@@ -42,7 +44,7 @@ public class OrderManager {
 		
 	}
 	
-	private void managerOrder(String orderId) {
+	private void manageOrder(String orderId) {
 		//notify restaurant for order.
 		
 	}

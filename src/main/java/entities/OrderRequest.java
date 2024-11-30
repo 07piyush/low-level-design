@@ -4,12 +4,19 @@ import java.util.Map;
 
 public class OrderRequest {
 
+	private String orderId;
 	private User orderedBy;
 	private Restaurant restaurant;
 	private Map<MenuItem, Integer> orderDetails;
 	private Location dropLocation;
 	
 	
+	public String getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
 	public User getOrderedBy() {
 		return orderedBy;
 	}
