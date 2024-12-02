@@ -1,5 +1,9 @@
 package libraryManagementLLD.entities;
 
-public class Member {
-
+public class Member extends Account{
+	
+	private long dateOfMembership;
+	private int totalBooksCheckedOut;
+	
+	
 }

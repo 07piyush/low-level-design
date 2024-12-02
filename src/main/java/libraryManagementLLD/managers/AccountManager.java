@@ -1,5 +1,5 @@
 package libraryManagementLLD.managers;
 
-public class MemberManager {
+public class AccountManager {
 
 }
